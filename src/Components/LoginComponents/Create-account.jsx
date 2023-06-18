@@ -1,19 +1,22 @@
 import { FloatButtons, Footer, Header } from '../MainComponents/';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import LaContext from '../../context/LaContext';
 import header_img from '../../images/photos/pousada/intern_10.jpg'
 import { requestCreateAccount, setToken, requestData } from '../../services/api';
 
-export default function Login() {
-  const [formInfo, setForm] = useState({ name: '', email: '', password: '', phone: 0 });
+export default function CreateAccount() {
+  const { isAuth, setAuth, formInfo, setForm } = useContext(LaContext)
   const { name, email, password, phone } = formInfo;
 
   const createAccount = async (event) => {
     event.preventDefault();
+    // console.log('target.value',value);
+    // console.log('setform', formInfo);
     try {
       const { token } = await requestCreateAccount('/create-account', formInfo);
       setToken(token);
 
-      localStorage.setItem('la-token', token);
+      localStorage.setItem('la-vita-token', token);
 
       // setIsLogged(true);
     } catch (error) {

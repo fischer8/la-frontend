@@ -4,7 +4,7 @@ import { About } from '../Components/AboutComponents';
 import { NotFound } from '../Components/NotFound';
 import { Suites } from '../Components/SuitesComponents';
 import { Contact } from '../Components/ContactComponents';
-import { Login } from '../Components/LoginComponents';
+import { Login, CreateAccount } from '../Components/LoginComponents';
 
 
 export {
@@ -15,4 +15,5 @@ export {
   Suites,
   Contact,
   Login,
+  CreateAccount
 }

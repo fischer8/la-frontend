@@ -3,7 +3,7 @@ import logo_img from '../../images/elementos/lavita_logo.webp';
 
 export default function Header(props) {
   const { cover } = props;
-  const opts = ['Home', 'Fotos', 'Suítes', 'Contato', 'Login'];
+  const opts = ['Home', 'Fotos', 'Suítes', 'Contato', 'Login', 'Criar Conta'];
 
   return (
     <header>

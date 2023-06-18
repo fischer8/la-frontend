@@ -1,7 +1,7 @@
 import { Nav } from './';
 
 export default function SideNav(props) {
-    const opts = ['Home','Sobre','Fotos','Suítes','Contato', 'Login']
+    const opts = ['Home','Sobre','Fotos','Suítes','Contato', 'Login', 'Criar Conta']
     const { handleChange } = props;
   return (
     <section>

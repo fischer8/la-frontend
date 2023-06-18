@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { MainPage, Photos, About, NotFound, Suites, Contact, Login } from './pages'
+import { MainPage, Photos, About, NotFound, Suites, Contact, Login, CreateAccount } from './pages'
 
 
 export default function App() {
@@ -13,6 +13,7 @@ export default function App() {
         <Route exact path='/sobre' element={<About/>} />
         <Route exact path='/contato' element={<Contact/>} /> 
         <Route exact path='/login' element={<Login/>} />        
+        <Route exact path='/criarconta' element={<CreateAccount/>} />  
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
