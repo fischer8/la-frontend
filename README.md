@@ -1,4 +1,4 @@
-Projeto de front-end com gerenciamento de rotas de um site de uma pousada
+Projeto de front-end com gerenciamento de rotas de um site que simula uma pousada
 
 #
 
